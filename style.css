@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Play&display=swap");
+
+body {
+  background-color: gainsboro;
+}
+
+*                       /*use star, if you want to style every elements.*/ {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Comfortaa", cursive;
+}
+
+nav ul {
+  display: flex; /*To Put the image, home, about and contactme in one row.*/
+  align-items: center; /*It will put the listed items in center*/
+  list-style-type: none; /*To remove the bullets from the listed items.*/
+  height: 65px;
+  background-color: black;
+  color: rgb(224, 203, 188);
+}
+
+.brand img {
+  padding: 8px;
+}
+
+.brand {
+  display: flex; /*To Put the image, home, about and contactme in one row.*/
+  align-items: center; /*It will put the listed items in center*/
+  font-weight: bolder; /*It will thicken the word 'AMP'*/
+  font-size: 1.3rem; /*To increase the size of the word 'AMP'*/
+}
+
+nav ul li {
+  padding: 8px;
+}
+
+.bottom {
+  position: sticky; /*To stick the position of the bottom thick black line*/
+  height: 85px;
+  background-color: black;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column; /*To put the items of the element in column*/
+  opacity: 0;
+}
+
+
+.icons {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Play", sans-serif;
+  display: flex; /*To Put the image, home, about and contactme in one row.*/
+  margin: 23px auto;
+  border-radius: 13px;
+  background-image: url("side.jpg");
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: right;
+}
+
+#myProgressBar {
+  width: 150vh;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 74px;
+  margin: 20px 20px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: black;
+  width: 150%;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  height: 33px;
+  width: 33px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timeStamp {
+  padding: 0 5px;
+}
+
+.timeStamp i {
+  cursor: pointer;
+  margin: 0 2px;
+  padding: 0 8px;
+}
+
+.favSong {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.songInfo {
+  position: absolute;
+  left: 235px;
+  font-size: larger;
+}
+
+
+.bottom img{
+  position: absolute;
+  left: 185px;
+  bottom: 52px;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;  /*the seconds are time of the gif transition, that how much seconds will it take to come and go on screen*/
+}
+
+.home{
+  position: absolute;
+  right: 45vh;
+  cursor: pointer;
+}
+
+.about{
+  position: absolute;
+  right: 25vh;
+  cursor: pointer;
+}
+
+.contact{
+  position: absolute;
+  right: 5vh;
+  cursor: pointer;
+}
+
+.button1 i{
+  position: absolute;
+  right: 530px;
+  bottom: 23%;
+  cursor: pointer;
+}
+
+.button2 i{
+  position: absolute;
+  right: 450px;
+  bottom: 24%;
+  cursor: pointer;
+}
+
+.button3 i{
+  position: absolute;
+  right: 380px;
+  bottom: 23%;
+  cursor: pointer;
+}
+
+#masterSongName1{
+  position: absolute;
+  right: 420px;
+  bottom: 60%;
+  color: black;
+}
+
+#seekBar button{
+  height: 15px;
+  position: absolute;
+  right: 540px;
+  bottom: 40%;
+  cursor: pointer;
+  background-color: rgb(231, 236, 240);
+  border-radius: 20px;
+  border: none;
+}
+
+
+#volume{
+  position: absolute;
+  right: 410px;
+  bottom: 10%;
+}
+
+
+
